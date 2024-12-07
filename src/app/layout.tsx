@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { ModeToggle } from "@/components/mode-toggle";
 import Header from "@/components/ui/header";
 
 const fontName = Quicksand({ subsets: ['latin'] })
@@ -27,7 +26,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
 
-          <Header />
+          {/* <Header /> */}
           {children}
         </ThemeProvider>
       </body>
