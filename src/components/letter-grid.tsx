@@ -68,9 +68,9 @@ const LetterGrid = () => {
                             onMouseLeave={handleMouseLeave}
                         >
                             <span
-                                className={`cursor-default transition-opacity duration-300 ease-out text-[#32CD32] ${hoveredCell?.row === rowIndex && hoveredCell?.col === colIndex
-                                    ? 'opacity-50 transition-none'
-                                    : 'opacity-0'
+                                className={`cursor-default transition-opacity duration-100 ease-out text-[#32CD32] ${hoveredCell?.row === rowIndex && hoveredCell?.col === colIndex
+                                    ? 'opacity-75 transition-none'
+                                    : 'opacity-5' //change to 0 to revert to trail effect
                                     }`}
                             >
                                 {getRandomCharacter()} {/* Display a random character */}

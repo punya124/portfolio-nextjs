@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import Header from "@/components/ui/header";
 
 const fontName = Quicksand({ subsets: ['latin'] })
 
@@ -17,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body className={fontName.className}>
         <ThemeProvider
           attribute="class"
