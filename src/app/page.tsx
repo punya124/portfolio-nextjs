@@ -16,8 +16,10 @@ import {
 import { Card, CardContent } from "@/components/ui/card"
 import SpotlightText from '@/components/spotlight-text';
 import InteractiveShadowText from '@/components/shadow-text';
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { useInView } from "framer-motion";
+import ZoomParallax from '../components/ZoomParallax/index';
+import Lenis from 'lenis'
 
 const Home = () => {
 
@@ -28,8 +30,19 @@ const Home = () => {
   const ref2 = useRef(null);
   const isInView2 = useInView(ref2, { once: true });
 
+  // useEffect(() => {
+  //   const lenis = new Lenis()
+
+  //   function raf(time) {
+  //     lenis.raf(time)
+  //     requestAnimationFrame(raf)
+  //   }
+
+  //   requestAnimationFrame(raf)
+  // }, [])
+
   return (
-    <main className='overflow-x-hidden relative scroll-smooth'>
+    <main className='relative scroll-smooth'>
       <LetterGrid />
       <header className="static flex-col flex h-screen w-full text-center items-center justify-center">
         <div className="grid grid-cols-1 grid-rows-3">
@@ -39,7 +52,7 @@ const Home = () => {
             <Button variant='outline' className='transition-all text-foreground mx-5 z-10 relative'>Download Résumé</Button>
           </div>
           <h1 className="text-6xl font-bold z-10 relative">punya galundia</h1>
-          <h1 className="text-muted-foreground flex w-full text-center items-end justify-around">Web Developer based in Amherst, MA</h1>
+          <h1 className="text-muted-foreground flex w-full text-center items-end justify-around">Full-Stack Web Developer based in Amherst, MA</h1>
         </div>
       </header>
       <div className='fixed h-1/6 flex-col flex justify-evenly right-10 bottom-10 z-50'>
@@ -255,6 +268,23 @@ const Home = () => {
         </div>
       </section>
 
+      <section className='py-20'>
+        <ZoomParallax />
+        <div className='w-full text-center p-14 h-screen'>
+          <h1 className="text-8xl font-bold">
+            About Me
+          </h1>
+          <div className='flex items-center'>
+            <img className='w-1/2 p-12 aspect-auto' src="imagePersonal.jpeg" alt="img" />
+            <div className='w-1/2 p-12 text-2xl'>
+              <p>I am a <b>full-stack web developer</b> with a knack for crafting interactive and engaging user experiences. I thrive on tackling projects that are unconventional and creative, constantly seeking opportunities to <b>experiment, innovate, and push boundaries</b>.</p>
+              ...
+              <p>Over the past few years, my curiosity has driven me to explore and master nearly ten programming languages, fueling my love for technology and <b>problem-solving</b>. This same passion inspires me as I pursue my computer science degree at UMass Amherst, where I am dedicated to deepening my <b>knowledge</b> and honing my <b>skills</b> to build impactful, forward-thinking solutions.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section ref={ref2}>
         <div style={{
           transform: isInView2 ? "none" : "translateX(-200px)",
@@ -263,6 +293,10 @@ const Home = () => {
         }}>
           <SpotlightText />
         </div>
+      </section>
+
+      <section className='h-20 bg-muted align-middle items-center flex px-14 text-muted-foreground'>
+        © Punya G - January 1st, 2025
       </section>
 
     </main >
