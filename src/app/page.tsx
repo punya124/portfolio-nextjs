@@ -49,7 +49,7 @@ const Home = () => {
           <div className="hidden md:flex w-full h-fit text-center items-center justify-center hover:">
             <ModeToggle />
             {/* <Nav /> */}
-            <Button variant='outline' className='transition-all text-foreground mx-5 z-10 relative'>Download Résumé</Button>
+            <a href="https://www.linkedin.com/in/punya-galundia-528327247/" target='_blank'><Button variant='outline' className='transition-all text-foreground mx-5 z-10 relative'>Connect with Me</Button></a>
           </div>
           <h1 className="text-6xl font-bold z-10 relative">punya galundia</h1>
           <h1 className="text-muted-foreground flex w-full text-center items-end justify-around">Full-Stack Web Developer based in Amherst, MA</h1>
@@ -184,13 +184,13 @@ const Home = () => {
                 <div className="p-1">
                   <Card>
                     <CardContent className="m-0 p-0 overflow-hidden">
-                      <img className='w-full h-1/2 rounded-t-xl' src="/sample.png" alt="" />
+                      <img className='w-full h-1/2 rounded-t-xl' src="/sample.jpeg" alt="" />
                       <div className='m-4 relative h-48'>
                         <h1 className='text-xl'>Mental Mentor</h1>
-                        <p className='text-sm text-muted-foreground'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <Button className='absolute bottom-1'>
+                        <p className='text-sm text-muted-foreground'>An anonymous platform to discuss matters of mental health.</p>
+                        {/* <Button className='absolute bottom-1'>
                           Learn More
-                        </Button>
+                        </Button> */}
                       </div>
                     </CardContent>
                   </Card>
@@ -200,13 +200,13 @@ const Home = () => {
                 <div className="p-1">
                   <Card>
                     <CardContent className="m-0 p-0 overflow-hidden">
-                      <img className='w-full h-1/2 rounded-t-xl' src="/sample.png" alt="" />
+                      <img className='w-full h-1/2 rounded-t-xl' src="/sample.jpeg" alt="" />
                       <div className='m-4 relative h-48'>
                         <h1 className='text-xl'>ATHENA</h1>
-                        <p className='text-sm text-muted-foreground'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <Button className='absolute bottom-1'>
+                        <p className='text-sm text-muted-foreground'>A voice assistant that handles everyday tasks autonomously using AI.</p>
+                        {/* <Button className='absolute bottom-1'>
                           Learn More
-                        </Button>
+                        </Button> */}
                       </div>
                     </CardContent>
                   </Card>
@@ -216,13 +216,13 @@ const Home = () => {
                 <div className="p-1">
                   <Card>
                     <CardContent className="m-0 p-0 overflow-hidden">
-                      <img className='w-full h-1/2 rounded-t-xl' src="/sample.png" alt="" />
+                      <img className='w-full h-1/2 rounded-t-xl' src="/sample.jpeg" alt="" />
                       <div className='m-4 relative h-48'>
                         <h1 className='text-xl'>NoSingle</h1>
-                        <p className='text-sm text-muted-foreground'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <Button className='absolute bottom-1'>
+                        <p className='text-sm text-muted-foreground'>A tinder inspired app to help long distance friends play a game of Truths.</p>
+                        {/* <Button className='absolute bottom-1'>
                           Learn More
-                        </Button>
+                        </Button> */}
                       </div>
                     </CardContent>
                   </Card>
@@ -232,13 +232,13 @@ const Home = () => {
                 <div className="p-1">
                   <Card>
                     <CardContent className="m-0 p-0 overflow-hidden">
-                      <img className='w-full h-1/2 rounded-t-xl' src="/sample.png" alt="" />
+                      <img className='w-full h-1/2 rounded-t-xl' src="/sample.jpeg" alt="" />
                       <div className='m-4 relative h-48'>
                         <h1 className='text-xl'>USocial</h1>
-                        <p className='text-sm text-muted-foreground'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <Button className='absolute bottom-1'>
+                        <p className='text-sm text-muted-foreground'>A platform to stay updated with all the social events at your university.</p>
+                        {/* <Button className='absolute bottom-1'>
                           Learn More
-                        </Button>
+                        </Button> */}
                       </div>
                     </CardContent>
                   </Card>
@@ -249,13 +249,13 @@ const Home = () => {
                 <div className="p-1">
                   <Card>
                     <CardContent className="m-0 p-0 overflow-hidden">
-                      <img className='w-full h-1/2 rounded-t-xl' src="/sample.png" alt="" />
+                      <img className='w-full h-1/2 rounded-t-xl' src="/sample.jpeg" alt="" />
                       <div className='m-4 relative h-48'>
                         <h1 className='text-xl'>RagFoll</h1>
-                        <p className='text-sm text-muted-foreground'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <Button className='absolute bottom-1'>
+                        <p className='text-sm text-muted-foreground'>A endless-runner style mobile game where you move your player around to avoid obstacles.</p>
+                        {/* <Button className='absolute bottom-1'>
                           Learn More
-                        </Button>
+                        </Button> */}
                       </div>
                     </CardContent>
                   </Card>
