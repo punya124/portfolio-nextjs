@@ -51,7 +51,7 @@ const Home = () => {
             {/* <Nav /> */}
             <a href="https://www.linkedin.com/in/punya-galundia-528327247/" target='_blank'><Button variant='outline' className='transition-all text-foreground mx-5 z-10 relative'>Connect with Me</Button></a>
           </div>
-          <h1 className="text-6xl font-bold z-10 relative">punya galundia</h1>
+          <h1 className="text-6xl font-bold z-10 relative">punya</h1>
           <h1 className="text-muted-foreground flex w-full text-center items-end justify-around">Full-Stack Web Developer based in Amherst, MA</h1>
         </div>
       </header>
